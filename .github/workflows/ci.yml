@@ -25,8 +25,8 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-      uses: mr-smithers-excellent/docker-build-push@v5
     - name: Build image and push to dockerhub
+      uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: saadshamim01/repo
         registry: docker.io
